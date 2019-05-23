@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--https://saruwakakun.com/en/material-color-->
+<resources>
+    <color name="colorPrimary">#b92c25</color>
+    <color name="colorPrimaryLight">#f2604e</color>
+    <color name="colorPrimaryDark">#91211d</color>
+    <color name="colorSecondary">#ececec</color>
+    <color name="colorSecondaryLight">#ffffff</color>
+    <color name="colorSecondaryDark">#bababa</color>
+
+    <color name="primaryTextColor">#000000</color>
+    <color name="primaryTextColorDisabled">#ff8c8c</color>
+    <color name="primaryTextColorOnDark">#ffffff</color>
+
+    <color name="secondaryTextColor">#000000</color>
+    <color name="secondaryTextColorDisabled">#979797</color>
+    <color name="TextColorOnDark">#ffffff</color>
+
+    <color name="bottomNavigation">@color/colorSecondary</color>
+    <color name="navItemColor">@color/secondaryTextColorDisabled</color>
+    <color name="navItemColorSelected">#c6091d</color>
+    <color name="colorlightblue">@color/colorSecondaryLight</color>
+
+    <color name="trans">#00000000 </color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="red">#FF0000</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="gray">#808080</color>
+    <color name="olive">#808000</color>
+    <color name="purple">#800080</color>
+    <color name="maroon">#800000</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="lime">#00FF00</color>
+    <color name="teal">#008080</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+    <color name="navy">#000080</color>
+    <color name="black">#000000</color>
+
+    <color name="greyPrimary">#DE000000</color>
+    <color name="greySecondary">#8B000000</color>
+    <color name="greyDisabled">#61000000</color>
+</resources>

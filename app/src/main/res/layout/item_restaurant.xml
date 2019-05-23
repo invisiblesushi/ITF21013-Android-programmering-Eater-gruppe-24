@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    tool:cardCornerRadius="5dp">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:minHeight="200dp"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/restaurant_item_image"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:background="@color/colorlightblue"
+            android:contentDescription="desc"
+            android:scaleType="centerCrop"
+            tool:layout_constraintEnd_toEndOf="parent"
+            tool:layout_constraintStart_toStartOf="parent"
+            tool:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/restaurant_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/restaurant_item_image"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@+id/restaurant_item_image"
+            android:layout_toStartOf="@+id/restaurant_distance"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Restaurant name"
+            android:textSize="18sp"
+            tool:layout_constraintStart_toStartOf="parent"
+            tool:layout_constraintTop_toBottomOf="@+id/restaurant_item_image" />
+
+        <me.zhanghai.android.materialratingbar.MaterialRatingBar
+            android:id="@+id/detail_ratingbar"
+            style="@style/Widget.MaterialRatingBar.RatingBar.Indicator.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_below="@+id/restaurant_name"
+            android:layout_alignStart="@+id/restaurant_name"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:numStars="5"
+            android:rating="0"
+            tool:mrb_progressTint="@color/colorPrimary"
+            tool:layout_constraintBottom_toBottomOf="parent"
+            tool:layout_constraintStart_toStartOf="parent"
+            tool:layout_constraintTop_toBottomOf="@+id/restaurant_name" />
+
+        <TextView
+            android:id="@+id/restaurant_rating_num"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_below="@+id/restaurant_name"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/detail_ratingbar"
+            android:gravity="center_vertical"
+            android:text="rating"
+            android:textSize="12sp"
+            tool:layout_constraintBottom_toBottomOf="parent"
+            tool:layout_constraintStart_toEndOf="@+id/detail_ratingbar"
+            tool:layout_constraintTop_toBottomOf="@+id/restaurant_name" />
+
+        <TextView
+            android:id="@+id/restaurant_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="distance"
+            android:textSize="14sp"
+            tool:layout_constraintEnd_toEndOf="parent"
+            tool:layout_constraintTop_toBottomOf="@+id/restaurant_item_image" />
+
+        <!--suppress AndroidUnknownAttribute --><![CDATA[
+        />
+
+    ]]>
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
+
+
